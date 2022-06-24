@@ -1,0 +1,198 @@
+﻿<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/mdb.min.css"/>
+    <!-- Plugin file -->
+    <link rel="stylesheet" href="./css/addons/datatables.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="Css/style.css"/>
+
+        <div class="login">
+           <form action="/" method="post">
+               <div class="name_user">
+                   <div>Ho Ten</div>
+                   <label><input type="text" placeholder="Nhap ten cua ban"/></label>
+               </div>
+               <div>Email</div>
+               <label><input type="text" placeholder="Nhap ten email cua ban"/></label>
+               <div>SDT</div>
+               <label><input type="text" placeholder="Nhap so dien thoai cua ban"/></label>
+               <div>Password</div>
+               <label><input type="password" placeholder="Nhap mat khau cua ban"/></label>
+           </form>
+       </div>
+
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Plugin file -->
+    <script src="./js/addons/datatables.min.js"></script>
+
+
+    
+
+    let table = $('#bgtt').DataTable({
+            ajax: function (dataSent, callback, settings) {
+                callback({ data: res.d });
+            },
+            paging: false,
+            data: res.d,
+            columns: [
+                { data: 'MACP'},
+                { data: 'GMUA3'},
+                { data: 'SLMUA3'},
+                { data: 'GMUA2'},
+                { data: 'SLMUA2'},
+                { data: 'GMUA1'},
+                { data: 'SLMUA1'},
+                { data: 'GIAKHOP'},
+                { data: 'SOLUONGKHOP'},
+                { data: 'GBAN1'},
+                { data: 'SLBAN1'},
+                { data: 'GBAN2'},
+                { data: 'SLBAN2'},
+                { data: 'GBAN3'},
+                { data: 'SLBAN3'},
+                { data: 'TONGSLKHOP'},
+            ],
+        })
+
+
+        .login {
+    flex: 1;
+    height: 400px;
+    margin: 30px;
+    background-color: aqua;
+}
+
+form {
+    
+}
+
+.name_user {
+    display: flex;
+    gap: 20px
+}
+
+input {
+    width: max-content;
+}
+
+@"SELECT  [MACP]
+                                                                  ,[GMUA3]
+                                                                  ,[SLMUA3]
+                                                                  ,[GMUA2]
+                                                                  ,[SLMUA2]
+                                                                  ,[GMUA1]
+                                                                  ,[SLMUA1]
+                                                                  ,[GIAKHOP]
+                                                                  ,[SOLUONGKHOP]
+                                                                  ,[GBAN1]
+                                                                  ,[SLBAN1]
+                                                                  ,[GBAN2]
+                                                                  ,[SLBAN2]
+                                                                  ,[GBAN3]
+                                                                  ,[SLBAN3]
+                                                                  ,[TONGSLKHOP]
+                                                              FROM [CHUNGKHOAN].[dbo].[BANGGIATRUCTUYEN]"
+
+MACP = (string)x["MACP"],
+                        GMUA3 = (double)x["GMUA3"] / G,
+                        SLMUA3 = (int)x["SLMUA3"] / SL,
+                        GMUA2 = (double)x["GMUA2"] / G,
+                        SLMUA2 = (int)x["SLMUA2"] / SL,
+                        GMUA1 = (double)x["GMUA1"] / G,
+                        SLMUA1 = (int)x["SLMUA1"] / SL,
+                        GIAKHOP = (double)x["GIAKHOP"] / G,
+                        SOLUONGKHOP = (int)x["SOLUONGKHOP"] / SL,
+                        GBAN1 = (double)x["GBAN1"] / G,
+                        SLBAN1 = (int)x["SLBAN1"] / SL,
+                        GBAN2 = (double)x["GBAN2"] / G,
+                        SLBAN2 = (int)x["SLBAN2"] / SL,
+                        GBAN3 = (double)x["GBAN3"] / G,
+                        SLBAN3 = (int)x["SLBAN3"] / SL,
+                        TONGSLKHOP = (int)x["TONGSLKHOP"] / SL
+
+                        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css"/>
+ 
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+
+
+        function getData() {
+
+    $.ajax({
+		url: 'index.aspx/GetDataAll',
+        type: 'POST',
+        contentType: 'application/json; charset=utf-8',
+        dataType: 'json',
+    }).done(function (res) {
+        let tb = $("#tbInfo");
+
+        tb.empty()
+
+        $.each(res.d, function (index, item) {
+            let html = `<tr>` +
+                `<td>` + item.MACP + `</td>` +
+                `<td>` + item.GMUA3 + `</td>` +
+                `<td>` + item.SLMUA3 + `</td>` +
+                `<td>` + item.GMUA2 + `</td>` +
+                `<td>` + item.SLMUA2 + `</td>` +
+                `<td>` + item.GMUA1 + `</td>` +
+                `<td>` + item.SLMUA1 + `</td>` +
+                `<td>` + item.GIAKHOP + `</td>` +
+                `<td>` + item.SOLUONGKHOP + `</td>` +
+                `<td>` + item.GBAN1 + `</td>` +
+                `<td>` + item.SLBAN1 + `</td>` +
+                `<td>` + item.GBAN2 + `</td>` +
+                `<td>` + item.SLBAN2 + `</td>` +
+                `<td>` + item.GBAN3 + `</td>` +
+                `<td>` + item.SLBAN3 + `</td>` +
+                `<td>` + item.TONGSLKHOP + `</td>` +
+                `</tr>`
+            tb.append(html)
+
+        })
+    }).fail(function () {
+
+    })
+
+}
+
+
+function getConnectHub() {
+    let tb = $.connection.myHub;
+
+    tb.client.displayStatus = function () {
+        getData()
+	}
+
+    $.connection.hub.start()
+
+    getData()
+
+}
+
+
+<div class="header_bgtt">BANG GIA TRUC TUYEN</div>
+
+
+
+
+
+/*let GTC = row['GTC']
+                    let strData = meta.settings.aoColumns[meta.col].data
+                    let is_highlight = false
+                    let data_price = meta.settings.aoData[meta.row].anCells[meta.col - 1].textContent
+
+                    if (data_ !== undefined) {
+                        is_highlight = data_[meta.row][strData] === data ? false : true
+                    }
+
+                    if (type === 'type') {
+                        
+                        drawCell(data_price, meta, GTC, is_highlight)
+                    }*/

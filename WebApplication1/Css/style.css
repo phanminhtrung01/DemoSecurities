@@ -1,0 +1,274 @@
+﻿body {
+
+}
+
+.hide {
+    background-color: black !important;
+}
+
+.mode-light {
+    background-color: rgb(0, 0, 0, 0.03) !important;
+}
+
+.mode-dark {
+    background-color: rgb(0, 0, 0, 0.7) !important;
+}
+
+.hover-dark {
+    background-color: #ffffff25 !important;
+}
+
+.hover-light {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.txt-ceil {
+    color: #C910FF;
+}
+
+.txt-floor {
+    color: #2D9EFF;
+}
+
+.txt-ref {
+    color: #FFAA24;
+}
+
+.txt-down {
+    color: #FF1025;
+}
+
+.txt-up {
+    color: #27D628;
+}
+
+.txt-normal {
+    color: #000000;
+}
+
+@keyframes highlight-up {
+    from {
+        color: white;
+        background-color: #00ff05;
+    }
+
+    to {
+        color: inherit;
+        background-color: transparent;
+    }
+}
+
+@keyframes highlight-down {
+    from {
+        color: white;
+        background-color: #ff0022;
+    }
+
+    to {
+        color: inherit;
+        background-color: transparent;
+    }
+}
+
+@keyframes highlight-ceil {
+    from {
+        color: white;
+        background-color: #fa28ff;
+    }
+
+    to {
+        color: inherit;
+        background-color: transparent;
+    }
+}
+
+@keyframes highlight-normal {
+    from {
+        color: white;
+        background-color: #ffff00;
+    }
+
+    to {
+        color: inherit;
+        background-color: transparent;
+    }
+}
+
+@keyframes highlight-floor {
+    from {
+        color: white;
+        background-color: #0f00ff;
+    }
+
+    to {
+        color: inherit;
+        background-color: transparent;
+    }
+}
+
+.highlight-up {
+    animation-name: highlight-up;
+    animation-duration: 2s;
+}
+
+.highlight-down {
+    animation-name: highlight-down;
+    animation-duration: 2s;
+}
+
+.highlight-normal {
+    animation-name: highlight-normal;
+    animation-duration: 2s;
+}
+
+.table-bordered {
+    border: none;
+}
+
+table.dataTable {
+    border-collapse: collapse;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    border-bottom: none
+}
+
+table.dataTable thead .sorting {
+    background-image: none;
+}
+
+
+table.dataTable thead .sorting_asc {
+    background-image: none;
+}
+
+table.dataTable tbody tr  {
+    background-color: inherit;
+}
+
+.home {
+    background-color: rgb(0, 0, 0, 0.03);
+    flex-direction: column;
+    height: 600px;
+    width: max-content;
+}
+
+.menu-option {
+    width: 100%;
+}
+
+.mode {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+}
+
+.btn-light {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-dark {
+    display: flex;
+    gap: 15px;
+}
+
+.header_bgtt {
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+    margin-bottom: 10px;
+}
+
+#bgtt_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#bgtt_filter {
+    display: flex;
+    gap: 20px;
+    color: inherit;
+    background-color: rgb(0, 0, 0, 0.05);
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    margin: 10px;
+}
+
+#bgtt_info {
+    color: inherit;
+}
+
+#bgtt th, td {
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+   
+}
+
+
+.dataTables_info {
+    text-align: end;
+    margin-right: 20px;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    border: none;
+    outline: none;
+}
+
+#bgtt_filter label {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 9px;
+    padding: 8px;
+}
+
+.table thead th {
+    vertical-align: middle;
+    border-bottom: 2px solid #dee2e6;
+}
+
+#header-fixed {
+    text-align: center;
+}
+
+    #header-fixed tr:first-child th:first-child {
+        width: 7%!important;
+    }
+
+    #header-fixed tr:first-child th:last-child {
+        width: 7%!important;
+    }
+
+/*#header-row th {
+    width: 6%;
+   //width: min-content
+}*/
+
+#tbInfo {
+    text-align: end
+}
+
+#tbInfo tr td:first-child {
+    text-align: start;
+}
+
+caption {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    color: inherit;
+}
+
+button {
+    border-radius: inherit;
+    overflow: hidden;
+    outline: none;
+}
+
+input {
+    color: inherit;
+}
